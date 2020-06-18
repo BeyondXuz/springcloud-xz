@@ -10,6 +10,15 @@ spring:
         locator:
           enabled: true
           lowerCaseServiceId: true
+  rabbitmq:
+    host: mq.xuzong.xyz
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+      concurrency: 10
+      max-concurrency: 20
+      prefetch: 5
 
 eureka:
   client:
