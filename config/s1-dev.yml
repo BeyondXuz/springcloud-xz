@@ -18,3 +18,11 @@ spring:
       concurrency: 10
       max-concurrency: 20
       prefetch: 5
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
+
