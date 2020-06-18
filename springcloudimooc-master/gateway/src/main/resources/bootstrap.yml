@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: prod
+  application:
+    name: wg
+  cloud:
+    config:
+      uri: http://localhost:8766
+      label: master
+      profile: prod
+
+
+---
+spring:
+  profiles: dev
+  application:
+    name: wg
+  cloud:
+    config:
+      uri: http://localhost:8766
+      label: master
+      profile: dev
