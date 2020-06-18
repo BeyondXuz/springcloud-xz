@@ -15,8 +15,8 @@ eureka:
 #      defaultZone: http://localhost:8762/eureka/,http://localhost:8763/eureka/
       defaultZone: http://localhost:8761/eureka/
 #   eureka本身也是服务，会进行注册，false关闭注册
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: true
+    fetch-registry: true
   server:
 #   关闭自我保护机制
     enable-self-preservation: false
